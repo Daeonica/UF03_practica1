@@ -17,31 +17,27 @@ class BookCategoryTableSeeder extends Seeder
      */
     public function run()
     {
-        // Creamos un objeto de tipo Faker
+        //creamos el objeto faker para poder acceder a sus funciones
         $faker = Faker::create();
-
-        // Obtenemos el último id insertado en la tabla books
         $lastBookId = DB::table("books")->max("id");
 
-        // Obtenemos el último id insertado en la tabla categories
+        //obtenemos el último id insertado en la tabla categories
         $lastCategoryId = DB::table("categories")->max("id");
 
-        // Generamos 10 registros aleatorios
+        //generamos 10 registros aleatorios
         for ($i = 1; $i <= 10; $i++) {
 
-            // Obtenemos un id aleatorio de la tabla books
+            //obtenemos un id aleatorio de la tabla books
             $bookId = $faker->numberBetween(1, $lastBookId);
 
-            // Generamos un número aleatorio entre 1 y 3 para determinar cuántas categorías asignar al libro actual
+            //generamos un número aleatorio entre 1 y 3 para determinar cuántas categorías asignar al libro actual
             $numCategories = $faker->numberBetween(1, 3);
 
-            // Generamos registros aleatorios en la tabla pivot para el libro actual
             for ($j = 1; $j <= $numCategories; $j++) {
 
-                // Obtenemos un id aleatorio de la tabla categories
                 $categoryId = $faker->numberBetween(1, $lastCategoryId);
 
-                // Insertamos en la tabla pivot book_category
+                //insertamos en la tabla pivot book_category
                 DB::table("book_category")->insert(
                     [
                         "book_id" => $bookId,

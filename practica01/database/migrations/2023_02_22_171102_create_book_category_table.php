@@ -13,10 +13,13 @@ return new class extends Migration
      */
     public function up()
 {
+    //migracion de book category
     Schema::create('book_category', function (Blueprint $table) {
+        //podria ser bigIncrement o simplemente id() ya que ambos son autoincrementales
         $table->bigIncrements('id');
         $table->unsignedBigInteger('book_id');
         $table->unsignedBigInteger('category_id');
+        //timestamps crea dos tablas.La columna created_at se llena automáticamente con la fecha y hora en que se creó un registro en la tabla. La columna updated_at se actualiza automáticamente con la fecha y hora en que se modificó el registro más reciente de la tabla.
         $table->timestamps();
         $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
         $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
