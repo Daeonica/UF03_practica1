@@ -74,9 +74,13 @@ las siguientes:
 
 
 Entrega
+
 Se valorará positivamente:
+
 • Identificación, declaración y uso de clases para el problema.
+
 • Limpieza y orden en la estructura.
+
 Al hacer las subidas cuida los elementos que hay que añadir al .gitignore para no incluir
 información sensible (ej: configuración bbdd) de tu proyecto o información en exceso
 (dependencias /vendor) en el repositorio remoto.
