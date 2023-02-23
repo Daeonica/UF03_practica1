@@ -63,10 +63,15 @@ Ejecución y pruebas
 Para probar la ejecución, será necesario testear la aplicación ejecutando
 migraciones y rollbacks correspondientes. Las pruebas que se pedirán serán
 las siguientes:
+
 ➢ Ejecuta las migraciones.
+
 ➢ Ejecuta los seeders.
+
 ➢ Ejecuta un rollback con todas las migraciones.
+
 ➢ Ejecuta un rollback de manera aislada.
+
 
 Entrega
 Se valorará positivamente:
