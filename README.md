@@ -63,15 +63,24 @@ Ejecución y pruebas
 Para probar la ejecución, será necesario testear la aplicación ejecutando
 migraciones y rollbacks correspondientes. Las pruebas que se pedirán serán
 las siguientes:
+
 ➢ Ejecuta las migraciones.
+
 ➢ Ejecuta los seeders.
+
 ➢ Ejecuta un rollback con todas las migraciones.
+
 ➢ Ejecuta un rollback de manera aislada.
 
+
 Entrega
+
 Se valorará positivamente:
+
 • Identificación, declaración y uso de clases para el problema.
+
 • Limpieza y orden en la estructura.
+
 Al hacer las subidas cuida los elementos que hay que añadir al .gitignore para no incluir
 información sensible (ej: configuración bbdd) de tu proyecto o información en exceso
 (dependencias /vendor) en el repositorio remoto.
