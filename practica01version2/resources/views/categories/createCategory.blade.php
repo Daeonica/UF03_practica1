@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('title')
-  CREATE CATEGORY
+  Create category
 @endsection
 
 @section('content')

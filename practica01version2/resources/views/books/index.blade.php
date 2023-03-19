@@ -1,7 +1,10 @@
 @extends('main')
 
+@section('title')
+List of books
+@endsection
+
 @section('content')
-<h3>List of Books</h3>
     <form method="POST" action="{{route('getBooks')}}">
         @csrf
         <div class="form-group">

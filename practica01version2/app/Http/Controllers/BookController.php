@@ -20,7 +20,7 @@ class BookController extends Controller
     }
     public function index()
     {
-        $books = Book::paginate(4);
+        $books = Book::paginate(6);
         $categories = Category::all();
         return view('books.index', compact('books', 'categories'));
     }
@@ -119,7 +119,7 @@ class BookController extends Controller
     {
         $categories = Category::all();
         $category = Category::find($request->input('category_id'));
-        $books = $category->books()->paginate(4);
+        $books = $category->books()->paginate(6);
         return view('books.index', compact('books', 'categories'));
     }
 

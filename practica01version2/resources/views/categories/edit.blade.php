@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('title')
-  EDIT CATEGORY
+Edit category
 @endsection
 
 @section('content')

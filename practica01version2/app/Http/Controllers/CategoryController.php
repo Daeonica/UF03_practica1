@@ -14,7 +14,7 @@ class CategoryController extends Controller
     }
     public function index()
     {
-        $categories = Category::paginate(4);
+        $categories = Category::paginate(6);
         return view('categories.index', ['categories'=> $categories] );
     }
 

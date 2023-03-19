@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('title')
-  EDIT BOOK
+Edit book
 @endsection
 
 @section('content')

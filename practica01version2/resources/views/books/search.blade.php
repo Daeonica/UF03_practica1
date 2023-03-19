@@ -1,14 +1,14 @@
 @extends('main')
 
 @section('title')
-SEARCH BOOK
+Search book 
 @endsection
 
 
 @section('content')
 <form class="form-group container" action="{{ route('resultSearchForm') }}" method="POST" novalidate>
     @csrf
-    <label for="title" class="form-label">TITLE:</label>
+    <label for="title" class="form-label">Choose a book:</label>
     <select name="book_id" id="book" class="form-control mb-3">
         @foreach ($books as $book)
         <option value="{{ $book->id}}">{{ $book->title }}</option>

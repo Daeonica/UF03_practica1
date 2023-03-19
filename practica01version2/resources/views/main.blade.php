@@ -8,8 +8,8 @@
 </head>
 
 <body class="container mt-5"     style="background: rgba(197, 183, 170, 0.838);">
-    <h1>Practica 7</h1>
-
+    <h1 style="text-align:center;">Practica 7</h1>
+<br>
     <header>
         <nav>
             <a href="{{ route('createBook') }}" class="btn btn-success">Register book</a>
@@ -18,14 +18,12 @@
             <a href="{{ route('categories.index') }}" class="btn btn-warning">View categories</a>
             <a href="{{ route('searchForm') }}" class="btn btn-info">Search a book</a>
         </nav>
-        <nav>
-
-        </nav>
+       <br>
     </header>
-    <h3>
+    <h3 style="text-align:center;">
         @yield('title')
     </h3>
-
+<br>
     <main>
         @yield('content')
     </main>

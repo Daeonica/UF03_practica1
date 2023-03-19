@@ -1,8 +1,10 @@
 @extends('main')
 
-@section('content')
-    <h1>Search Result</h1>
-    
+@section('title')
+Search Result
+@endsection 
+
+@section('content')    
     <table class="table table-striped table-bordered">
         <thead class="thead-light">
             <tr>

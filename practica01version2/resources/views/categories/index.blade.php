@@ -1,7 +1,8 @@
 @extends('main')
-
+@section('title')
+List of categories
+@endsection
 @section('content')
-    <h1>List of Categories</h1>
     <table class="table table-striped table-bordered">
         <thead class="thead-light">
             <tr>
